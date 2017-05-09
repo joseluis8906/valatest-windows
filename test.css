@@ -1,0 +1,49 @@
+.Window
+{
+    background: rgb(240,240,240);
+ }
+
+.Label
+{
+    background: rgb(40,190,160);
+    color: rgb(245,245,245);
+    font-weight: bold;
+    font-family: Arial;
+    padding: 30px 10px;
+}
+
+.Entry
+{
+    background: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid rgb(40,190,160);
+    border-radius: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+.Entry:active
+{
+    outline: none;
+    border: none;
+}
+
+.Button
+{
+    background: rgb(40,190,160);
+    color: rgb(245,245,245);
+    font-weight: bold;
+    font-family: Arial;
+    box-shadow: none;
+}
+
+.button:active
+{
+    background: rgb(40,190,160);
+    color: rgb(245,245,245);
+    font-weight: bold;
+    font-family: Arial;
+    box-shadow: none;
+    outline: none;
+}
+
