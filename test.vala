@@ -27,7 +27,7 @@ public class MyApp : Gtk.Window
         this.set_default_size (256,375);        
         this.window_position = Gtk.WindowPosition.CENTER;
         
-        this.Lbl1 = new Gtk.Label ("Material Design Text Input\nWith No Extra Markup");
+        this.Lbl1 = new Gtk.Label ("Mqtt");
         this.Lbl1.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
         this.Lbl1.get_style_context ().add_class ("Label");
         this.Lbl1.set_justify (Gtk.Justification.CENTER);
@@ -52,6 +52,7 @@ public class MyApp : Gtk.Window
         this.Submit.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
         this.Submit.get_style_context ().add_class ("Button");
         this.Submit.set_label ("Submit");
+        this.Submit.set_halign (Gtk.Align.END);
         
         var Vbox1 = new Gtk.Box (Gtk.Orientation.VERTICAL, 5);
         Vbox1.set_homogeneous (true);
@@ -61,7 +62,7 @@ public class MyApp : Gtk.Window
         Vbox1.pack_start (this.Password, false, false, 0);
         Vbox1.pack_start (this.Submit, false, false, 0);
         
-        Container.pack_start (Vbox1);
+        Container.pack_start (Vbox1, true, true, 0);
         this.add (Container);
         this.show_all ();
         
@@ -78,5 +79,5 @@ public class MyApp : Gtk.Window
         
         Gtk.main ();
         return 0;
-    }
+    } 
 }
